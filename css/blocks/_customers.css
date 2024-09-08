@@ -1,0 +1,75 @@
+.customers {
+    margin-top: 100px;
+}
+
+.customers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.customers__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+}
+
+.customer {
+    grid-column: 3 span;
+}
+
+.customer__card {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 20px 24px 40px 24px;
+
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.cc__heading {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.ch__image img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cc__heading .title {
+    max-width: 220px;
+}
+
+.cc__text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.ct__par {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.833rem + 0.19vw, 1rem);
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: #646464;
+}
+
+.customer__card {
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

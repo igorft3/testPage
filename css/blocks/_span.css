@@ -1,0 +1,4 @@
+.span--green {
+    color: var(--frog-green);
+    transition: transform 0.3s ease;
+}

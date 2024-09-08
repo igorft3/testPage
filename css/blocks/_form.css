@@ -1,0 +1,55 @@
+.contact-form {
+    margin-top: 50px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+    
+    padding: 19px 36px;
+
+    background-color: var(--green-blue);
+    border-radius: 10px;
+}
+
+.form__text {
+    font-weight: 700;
+    font-size: clamp(1.25rem, 1.167rem + 0.37vw, 1.5rem);
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.form__input {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.phone__input {
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.833rem + 0.19vw, 1rem);
+    letter-spacing: 0.04em;
+
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 362px;
+    height: 42px;
+}
+
+.phone__input:focus {
+    outline: 1px dashed var(--black)
+}
+
+.phone__input::placeholder {
+    font-weight: 400;
+    font-size: clamp(0.875rem, 0.833rem + 0.19vw, 1rem);
+    letter-spacing: 0.04em;
+    color: #bbb;
+}
+

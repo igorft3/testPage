@@ -1,0 +1,20 @@
+:root {
+    --green-blue: #0cc0d5;
+    --black: #363636;
+    --frog-green: #4a9843;
+    --white: #fff;
+    --grey: #f8f7fc;
+    --hover-blue: #B0F7FF;
+    --btn-hover-blue: #15a4b5;
+    --btn-hover-black: #616161;
+    --footer-black: #08191B;
+
+    --font-family: "GT Walsheim Pro", sans-serif;
+
+    --container-width: 1180px;
+    --container-offset: 15px;
+
+    --btn-trs: transform 0.3s ease-out, filter 0.3s ease-out;
+    --nav-trs: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    --item-trs: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}

@@ -1,0 +1,77 @@
+.header {
+    background-color: var(--white);
+    box-shadow: 0 8px 10px 0 rgba(217, 214, 226, 0.6);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: visibility 0.3s ease, transform 0.3s ease;
+}
+
+.header--hidden {
+    transition: transform 0.3s ease, visibility 0.3s ease;
+    transform: translateY(-100%);
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+
+}
+
+.header__top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.header__hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    padding-left: 12px;
+    border-left: 2px solid #dedce7;
+}
+
+.hour {
+    font-weight: 300;
+    font-size: clamp(0.875rem, 0.833rem + 0.19vw, 1rem);
+    letter-spacing: 0.04em;
+    color: #363636;
+}
+
+.header__phone-numbers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 37px 0 14px;
+    gap: 76px;
+}
+
+.pn__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pn__number {
+    font-weight: 700;
+    font-size: clamp(1rem, 0.917rem + 0.37vw, 1.25rem);;
+    letter-spacing: 0.04em;
+    color: #363636;
+}
+
+.pn__info {
+    font-weight: 300;
+    font-size: clamp(0.875rem, 0.833rem + 0.19vw, 1rem);
+    letter-spacing: 0.04em;
+    color: #363636;
+}

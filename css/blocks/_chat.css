@@ -1,0 +1,39 @@
+.chat {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 38px;
+    bottom: 68px;
+    z-index: 5;
+    transition: transform 0.3s ease;
+}
+
+.chat svg {
+    overflow: visible;
+}
+
+.chat svg circle {
+    width: 100px;
+    height: 100px;
+}
+
+.chat svg path {
+    width: 80px;
+    height: 80px;
+}
+
+.chat svg circle:first-child {
+    animation: 1s linear 0s infinite alternate chat;
+
+    transform-origin: 50% 50%;
+}
+
+@keyframes chat {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
